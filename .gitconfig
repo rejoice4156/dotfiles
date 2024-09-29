@@ -3,7 +3,7 @@
 	email = $USER_EMAIL
 	signingkey = $HOME/.ssh/id_ed25519.pub
 [core]
-	editor = $CORE_EDITOR
+	editor = vim
 [init]
 	defaultBranch = main
 [gpg]
