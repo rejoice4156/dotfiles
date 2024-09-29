@@ -1,7 +1,7 @@
 [user]
 	name = $USER_NAME
 	email = $USER_EMAIL
-	signingkey = $HOME/.ssh/id_ed25519.pub
+	signingkey = $USER_SIGNINGKEY
 [core]
 	editor = vim
 [init]
