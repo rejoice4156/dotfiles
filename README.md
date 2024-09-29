@@ -21,3 +21,7 @@ $ chmod +x init.sh
 
 $ sh init.sh
 
+4. Reload bash or log out and log back in
+
+$ bash exec
+
