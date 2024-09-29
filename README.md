@@ -12,6 +12,7 @@ $ git clone https://github.com/rejoice4156/dotfiles.git
 
   - $USER_NAME
   - $USER_EMAIL
+  - $SSH_PUBKEY
 
 3. Make init.sh executable
 
