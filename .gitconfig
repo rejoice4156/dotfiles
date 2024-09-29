@@ -12,3 +12,12 @@
 	gpgsign = true
 [gpg "ssh"]
 	allowedSignersFile = $HOME/.ssh/allowed_signers
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	visual = !gitk
+	merge = merge --verify-signatures -S
