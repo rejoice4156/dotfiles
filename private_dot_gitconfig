@@ -16,9 +16,9 @@
 	gpgsign = true
 [tag]
 	gpgsign = true
-[includeIf "gitdir:~/Personal"]
+[includeIf "gitdir:~/Personal/"]
 	path = ~/Personal/.gitconfig
-[includeIf "gitdir:~/School"]
+[includeIf "gitdir:~/School/"]
 	path = ~/School/.gitconfig
-[includeIf "gitdir:~/Work"]
+[includeIf "gitdir:~/Work/"]
 	path = ~/Work/.gitconfig
