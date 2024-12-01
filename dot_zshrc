@@ -1,0 +1,2 @@
+source /Users/karl/.config/op/plugins.sh
+eval "$(atuin init zsh)"
