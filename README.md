@@ -42,7 +42,8 @@ brew bundle install ~/Brewfile
 7. Set up other tools
 
 ```
-atuin login && atuin sync
+atuin login
+atuin sync
 op plugin init glab
 op plugin init doctl
 
