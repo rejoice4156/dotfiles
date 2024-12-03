@@ -44,12 +44,15 @@ cask "iina"
 cask "iterm2"
 cask "orbstack"
 cask "pycharm"
+cask "raycast"
 cask "tailscale"
 mas "1Password for Safari", id: 1569813296
 mas "DigiDoc4", id: 1370791134
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft Word", id: 462054704
+mas "Raycast Companion", id: 6738274497
 mas "Reeder", id: 6475002485
+mas "Save to Raindrop.io", id: 1549370672
 mas "Web eID", id: 1576665083
 mas "Yubico Authenticator", id: 1497506650
