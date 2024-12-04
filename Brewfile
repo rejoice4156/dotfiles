@@ -38,6 +38,7 @@ brew "zoxide"
 cask "1password"
 cask "1password-cli"
 cask "discord"
+cask "displaylink"
 cask "font-hack-nerd-font"
 cask "google-chrome"
 cask "iina"
@@ -54,5 +55,6 @@ mas "Microsoft Word", id: 462054704
 mas "Raycast Companion", id: 6738274497
 mas "Reeder", id: 6475002485
 mas "Save to Raindrop.io", id: 1549370672
+mas "Termius", id: 1176074088
 mas "Web eID", id: 1576665083
 mas "Yubico Authenticator", id: 1497506650
