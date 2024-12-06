@@ -3,3 +3,7 @@ source <(fzf --zsh)
 eval "$(zoxide init zsh)"
 eval "$(atuin init zsh)"
 eval "$(starship init zsh)"
+tere() {
+    local result=$(command tere "$@")
+    [ -n "$result" ] && cd -- "$result"
+}
