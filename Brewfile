@@ -1,5 +1,6 @@
 tap "homebrew/bundle"
 tap "homebrew/services"
+brew "aerc"
 brew "python@3.13"
 brew "ansible"
 brew "atuin", restart_service: true
