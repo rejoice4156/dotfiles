@@ -1,0 +1,19 @@
+[accounts.icloud]
+default = true
+email = "variable2671@icloud.com"
+display-name = "Karl Hans Laurits"
+downloads-dir = "/Users/karl/Downloads"
+backend.type = "imap"
+backend.host = "imap.mail.me.com"
+backend.port = 993
+backend.login = "variable2671"
+backend.encryption.type = "tls"
+backend.auth.type = "password"
+backend.auth.command = 'op read "op://Personal/himalaya_icloud/credential"'
+message.send.backend.type = "smtp"
+message.send.backend.host = "smtp.mail.me.com"
+message.send.backend.port = 587
+message.send.backend.login = "variable2671@icloud.com"
+message.send.backend.encryption.type = "start-tls"
+message.send.backend.auth.type = "password"
+message.send.backend.auth.command = 'op read "op://Personal/himalaya_icloud/credential"'
