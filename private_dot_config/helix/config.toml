@@ -2,6 +2,10 @@ theme = "onedark"
 
 [editor]
 line-number = "relative"
+cursorline = true
+mouse = true
+color-modes = true
+bufferline = "always"
 
 [editor.cursor-shape]
 insert = "bar"
@@ -10,6 +14,26 @@ select = "underline"
 
 [editor.file-picker]
 hidden = false
+parents = false
+
+[editor.soft-wrap]
+enable = true
+
+[editor.whitespace]
+render = "none"
+
+[editor.indent-guides]
+render = false
+character = "╎" # Some characters that work well: "▏", "┆", "┊", "⸽"
+skip-levels = 1
+
+[editor.lsp]
+display-messages = true
+auto-signature-help	= true
+display-signature-help-docs	= true
 
 [keys.normal]
+D = "kill_to_line_end"
+S-l = ":buffer-next"
+S-h = ":buffer-previous"
 C-g = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
