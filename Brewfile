@@ -41,6 +41,7 @@ brew "television"
 brew "tere"
 brew "tmux"
 brew "topgrade"
+brew "transmission-cli"
 brew "yazi"
 brew "zoxide"
 cask "1password"
@@ -58,8 +59,10 @@ cask "pycharm"
 cask "raspberry-pi-imager"
 cask "raycast"
 cask "tailscale"
+cask "transmission"
 cask "winbox"
 mas "1Password for Safari", id: 1569813296
+mas "com.kagimacOS.Kagi-Search", id: 1622835804
 mas "DigiDoc4", id: 1370791134
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft PowerPoint", id: 462062816

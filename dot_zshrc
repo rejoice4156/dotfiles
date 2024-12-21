@@ -3,7 +3,19 @@ source <(fzf --zsh)
 eval "$(zoxide init zsh)"
 eval "$(atuin init zsh)"
 eval "$(starship init zsh)"
+
+# tere shell integration
 tere() {
     local result=$(command tere "$@")
     [ -n "$result" ] && cd -- "$result"
+}
+
+# yazi shell wrapper
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
 }
