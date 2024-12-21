@@ -16,6 +16,8 @@
 	gpgsign = true
 [tag]
 	gpgsign = true
+[rebase]
+	updateRefs = true
 [includeIf "gitdir:~/Personal/"]
 	path = ~/Personal/.gitconfig
 [includeIf "gitdir:~/School/"]
