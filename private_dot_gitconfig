@@ -5,7 +5,7 @@
 [init]
     defaultbranch = main
 [core]
-    editor = hx
+    editor = nvim
     excludesfile = ~/.gitignore
 [gpg]
 	format = ssh
