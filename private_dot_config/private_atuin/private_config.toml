@@ -202,7 +202,7 @@ enter_accept = false
 # Enable sync v2 by default
 # This ensures that sync v2 is enabled for new installs only
 # In a later release it will become the default across the board
-records = true
+# records = true
 
 [preview]
 ## which preview strategy to use to calculate the preview height (respects max_preview_height).
