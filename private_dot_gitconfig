@@ -1,0 +1,26 @@
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+	allowedsignersfile = /Users/karl/.ssh/allowed_signers
+[commit]
+	gpgsign = true
+[user]
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIsrn4y3/6pbsLBq4YTIBHEsU+iKngiymW5ZqsunXi4C
+	name = Karl Hans Laurits
+	email = 168311564+rejoice4156@users.noreply.github.com
+[init]
+	defaultbranch = main
+[core]
+	editor = nvim
+	excludesfile = /Users/karl/.gitignore
+[tag]
+	gpgsign = true
+[rebase]
+	updaterefs = true
+[includeIf "gitdir:~/Personal/"]
+	path = ~/Personal/.gitconfig
+[includeIf "gitdir:~/School/"]
+	path = ~/School/.gitconfig
+[includeIf "gitdir:~/Work/"]
+	path = ~/Work/.gitconfig
