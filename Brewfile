@@ -16,6 +16,7 @@ brew "fzf"
 brew "gh"
 brew "git"
 brew "glab"
+brew "glow"
 brew "gnupg"
 brew "gping"
 brew "lazydocker"
@@ -33,6 +34,8 @@ brew "yazi"
 brew "zoxide"
 cask "1password"
 cask "1password-cli"
+cask "balenaetcher"
+cask "chatgpt"
 cask "discord"
 cask "firefox"
 cask "ghostty"
@@ -41,6 +44,7 @@ cask "iina"
 cask "orbstack"
 cask "pycharm"
 cask "raycast"
+cask "signal"
 cask "spacedrive"
 cask "tailscale"
 cask "winbox"
@@ -48,6 +52,7 @@ mas "1Password for Safari", id: 1569813296
 mas "com.kagimacOS.Kagi-Search", id: 1622835804
 mas "DigiDoc4", id: 1370791134
 mas "Keynote", id: 409183694
+mas "Messenger", id: 1480068668
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft Word", id: 462054704
@@ -59,3 +64,4 @@ mas "Save to Raindrop.io", id: 1549370672
 mas "Termius", id: 1176074088
 mas "Web eID", id: 1576665083
 mas "Yubico Authenticator", id: 1497506650
+mas "‎WhatsApp", id: 310633997
