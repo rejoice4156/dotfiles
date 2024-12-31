@@ -1,7 +1,13 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR --export EDITOR:{{ .editor }}
+
+{{ if eq .chezmoi.os "darwin" }}
+
 SETUVAR --export XDG_CONFIG_HOME:{{ .xdg_config_home }}
+
+{{ end }}
+
+SETUVAR --export EDITOR:{{ .editor }}
 SETUVAR __fish_initialized:3400
 SETUVAR fish_color_autosuggestion:brblack
 SETUVAR fish_color_cancel:\x2dr
