@@ -1,9 +1,9 @@
 [init]
 	defaultbranch = main
 [user]
-	name = Karl Hans Laurits
-	email = 168311564+rejoice4156@users.noreply.github.com
-	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIsrn4y3/6pbsLBq4YTIBHEsU+iKngiymW5ZqsunXi4C
+	name = {{ .name }}
+	email = {{ .email }}
+	signingkey = {{ .signingkey }}
 [commit]
 	gpgsign = true
 [tag]
@@ -14,8 +14,8 @@
 	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
 	allowedsignersfile = /Users/karl/.ssh/allowed_signers
 [core]
-	editor = nvim
-	excludesfile = /Users/karl/.gitignore
+	editor = {{ .editor }}
+	excludesfile = {{ .excludesfile }}
 	pager = delta
 [interactive]
 	diffFilter = delta --color-only
