@@ -1,3 +1,5 @@
+{{ if eq .chezmoi.os "darwin" }}
+
 tap "dnote/dnote"
 tap "homebrew/bundle"
 tap "homebrew/services"
@@ -68,3 +70,5 @@ mas "Termius", id: 1176074088
 mas "Web eID", id: 1576665083
 mas "Yubico Authenticator", id: 1497506650
 mas "‎WhatsApp", id: 310633997
+
+{{ end }}
