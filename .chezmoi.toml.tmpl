@@ -1,0 +1,36 @@
+# sourceDir = "/Users/karl/.dotfiles"
+
+[edit]
+command = "nvim"
+
+[merge]
+command = "nvim"
+args = ["-d", "{{ .Destination }}", "{{ .Source }}", "{{ .Target }}"]
+
+[diff]
+command = "delta"
+pager = "delta"
+
+[[textconv]]
+pattern = "**/*.plist"
+command = "plutil"
+args = ["-convert", "xml1", "-o", "-", "-"]
+
+[git]
+autoCommit = true
+autoPush = true
+
+[data]
+editor = "nvim"
+
+{{ if eq .chezmoi.os "darwin" }}
+
+excludesfile = "/Users/karl/.gitignore"
+xdg_config_home = "/Users/karl/.config"
+
+{{ else if eq .chezmoi.os "linux" }}
+
+excludesfile = "/home/karl/.gitignore"
+xdg_config_home = "/home/karl/.config"
+
+{{ end }}
