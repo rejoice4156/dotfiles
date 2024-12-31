@@ -1,4 +1,4 @@
 [user]
-	name = {{ .personal.name }}
-	email = {{ .personal.email }}
-	signingkey = {{ .personal.signingkey }}
+	name = {{ onepasswordRead "op://Personal/dja2uwoa3m5fhh4fektwvbqpcq/name" }}
+	email = {{ onepasswordRead "op://Personal/dja2uwoa3m5fhh4fektwvbqpcq/email" }}
+	signingkey = {{ onepasswordRead "op://Personal/dja2uwoa3m5fhh4fektwvbqpcq/public key" }}
