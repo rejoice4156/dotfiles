@@ -1,11 +1,8 @@
-{{ if eq .chezmoi.os "darwin" }}
-
 tap "dnote/dnote"
 tap "homebrew/bundle"
 tap "homebrew/services"
 brew "python@3.13"
 brew "ansible"
-brew "atuin", restart_service: true
 brew "bat"
 brew "bottom"
 brew "chezmoi"
@@ -38,6 +35,10 @@ brew "tealdeer"
 brew "yazi"
 brew "zoxide"
 brew "dnote/dnote/dnote"
+
+{{ if eq .chezmoi.os "darwin" }}
+
+brew "atuin", restart_service: true
 cask "1password"
 cask "1password-cli"
 cask "balenaetcher"
@@ -73,5 +74,8 @@ mas "Yubico Authenticator", id: 1497506650
 mas "‎WhatsApp", id: 310633997
 
 {{ else if eq .chezmoi.os "linux" }}
+
+brew "atuin"
+brew "gcc"
 
 {{ end }}
