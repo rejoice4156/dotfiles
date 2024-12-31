@@ -26,3 +26,16 @@ chezmoi init --apply --verbose https://github.com/$GITHUB_USERNAME/dotfiles.git
 ```bash
 brew install ~/Brewfile
 ```
+
+## Set up cli programs using 1password-cli
+```bash
+op plugin init gh
+op plugin init glab
+op plugin init tea
+op plugin init doctl
+```
+
+## Set fish as default shell
+```bash
+chsh -s $(which fish)
+```
