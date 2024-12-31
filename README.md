@@ -24,7 +24,7 @@ chezmoi init --apply --verbose https://github.com/$GITHUB_USERNAME/dotfiles.git
 
 ## Install everything else
 ```bash
-brew install ~/Brewfile
+brew bundle --file ~/Brewfile
 ```
 
 ## Set up cli programs using 1password-cli
