@@ -8,6 +8,7 @@ if status is-interactive
     {{ else if eq .chezmoi.os "linux" }}
 
     fish_add_path /home/linuxbrew/.linuxbrew/bin/
+    source /home/karl/.config/op/plugins.sh
     alias cd="z"
 
     {{ end }}
