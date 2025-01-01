@@ -1,3 +1,9 @@
+{{ if eq .chezmoi.os "darwin" }}
+shell = "/opt/homebrew/bin/fish"
+{{- else if eq .chezmoi.os "linux" }}
+shell = "/home/linuxbrew/.linuxbrew/bin/fish"
+{{- end }}
+
 [edit]
 command = "nvim"
 
