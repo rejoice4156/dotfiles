@@ -13,12 +13,5 @@ clipboard-paste-protection = true
 quick-terminal-position = center
 quick-terminal-animation-duration = 0
 quick-terminal-autohide = true
-keybind = global:cmd+grave_accent=toggle_quick_terminal
-
-{{ if eq .chezmoi.os "darwin" }}
-
 macos-titlebar-style = hidden
-
-{{ else if eq .chezmoi.os "linux" }}
-
-{{ end }}
+keybind = global:cmd+grave_accent=toggle_quick_terminal
