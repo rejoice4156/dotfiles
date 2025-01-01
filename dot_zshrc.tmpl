@@ -1,6 +1,3 @@
-{{ if eq .chezmoi.os "darwin" }}
-
+{{ if eq .chezmoi.os "darwin" -}}
 source /Users/karl/.config/op/plugins.sh
-export EDITOR={{ .editor }}
-
-{{ end }}
+{{- end }}
