@@ -11,8 +11,8 @@
 [gpg]
 	format = ssh
 [gpg "ssh"]
-	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
-	allowedsignersfile = /Users/karl/.ssh/allowed_signers
+	program = {{ .gpg_ssh_program }}
+	allowedsignersfile = {{ .allowedsignersfile }}
 [core]
 	editor = {{ .editor }}
 	excludesfile = {{ .excludesfile }}
