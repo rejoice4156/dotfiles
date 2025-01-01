@@ -3,12 +3,9 @@ if status is-interactive
     set -g fish_key_bindings fish_vi_key_bindings
     set -g fish_greeting
     op completion fish | source
+    source {{ .op_plugins_path }}
     fzf --fish | source
     atuin init fish | source
     zoxide init fish | source
     starship init fish | source
-    {{- if eq .chezmoi.os "linux" }}
-    source /home/karl/.config/op/plugins.sh
-    # alias cd="z"
-    {{- end }}
 end
