@@ -18,5 +18,5 @@ fi
 unset rc
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-source /home/karl/.config/op/plugins.sh
+source {{ .op_plugins_path }}
 {{- end }}
