@@ -26,10 +26,12 @@ allowedsignersfile = "/Users/karl/.ssh/allowed_signers"
 excludesfile = "/Users/karl/.gitignore"
 homebrew_path = "/opt/homebrew/bin/"
 op_plugins_path = "/Users/karl/.config/op/plugins.sh"
+fish_user_paths = "/opt/homebrew/bin\x1e/opt/homebrew/bin/"
 {{- else if eq .chezmoi.os "linux" }}
 gpg_ssh_program = "/opt/1Password/op-ssh-sign"
 allowedsignersfile = "/home/karl/.ssh/allowed_signers"
 excludesfile = "/home/karl/.gitignore"
 homebrew_path = "/home/linuxbrew/.linuxbrew/bin/"
 op_plugins_path = "/home/karl/.config/op/plugins.sh"
+fish_user_paths = "/home/linuxbrew/.linuxbrew/bin\x1e/home/linuxbrew/.linuxbrew/bin/"
 {{- end }}
