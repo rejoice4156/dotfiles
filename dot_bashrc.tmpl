@@ -24,5 +24,12 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
+# Homebrew
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+# 1Password
 source /home/karl/.config/op/plugins.sh
+
+# Docker
+export PATH=/usr/bin:$PATH
+export DOCKER_HOST=unix:///run/user/1000/docker.sock
