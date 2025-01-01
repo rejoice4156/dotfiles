@@ -25,9 +25,11 @@ gpg_ssh_program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
 allowedsignersfile = "/Users/karl/.ssh/allowed_signers"
 excludesfile = "/Users/karl/.gitignore"
 homebrew_path = "/opt/homebrew/bin/"
+op_plugins_path = "/Users/karl/.config/op/plugins.sh"
 {{- else if eq .chezmoi.os "linux" }}
 gpg_ssh_program = "/opt/1Password/op-ssh-sign"
 allowedsignersfile = "/home/karl/.ssh/allowed_signers"
 excludesfile = "/home/karl/.gitignore"
 homebrew_path = "/home/linuxbrew/.linuxbrew/bin/"
+op_plugins_path = "/home/karl/.config/op/plugins.sh"
 {{- end }}
