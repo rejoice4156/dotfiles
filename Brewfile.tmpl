@@ -42,6 +42,7 @@ brew "dnote/dnote/dnote"
 {{ if eq .chezmoi.os "darwin" }}
 
 brew "atuin", restart_service: true
+brew "colima", restart_service: true
 cask "1password"
 cask "1password-cli"
 cask "balenaetcher"
@@ -79,6 +80,7 @@ mas "‎WhatsApp", id: 310633997
 {{ else if eq .chezmoi.os "linux" }}
 
 brew "atuin"
+brew "colima"
 brew "gcc"
 
 {{ end }}
