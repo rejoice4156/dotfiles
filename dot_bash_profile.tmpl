@@ -1,6 +1,4 @@
-{{ if eq .chezmoi.os "darwin" }}
-
-{{ else if eq .chezmoi.os "linux" }}
+{{ if eq .chezmoi.os "linux" -}}
 
 # .bash_profile
 
@@ -11,4 +9,4 @@ fi
 
 # User specific environment and startup programs
 
-{{ end }}
+{{- end }}
