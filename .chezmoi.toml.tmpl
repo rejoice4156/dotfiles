@@ -24,12 +24,16 @@ editor = "nvim"
 
 {{- if eq .chezmoi.os "darwin" }}
 
-excludesfile = "/Users/karl/.gitignore"
+1password_ssh_program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+allowed_signers_file = "/Users/karl/.ssh/allowed_signers"
+excludes_file = "/Users/karl/.gitignore"
 xdg_config_home = "/Users/karl/.config"
 
 {{- else if eq .chezmoi.os "linux" }}
 
-excludesfile = "/home/karl/.gitignore"
+1password_ssh_program = "/opt/1Password/op-ssh-sign"
+allowed_signers_file = "/home/karl/.ssh/allowed_signers"
+excludes_file = "/home/karl/.gitignore"
 xdg_config_home = "/home/karl/.config"
 
 {{- end }}
