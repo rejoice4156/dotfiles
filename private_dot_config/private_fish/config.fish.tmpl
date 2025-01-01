@@ -10,4 +10,5 @@ if status is-interactive
     alias cd="z"
     starship init fish | source
     set -Ux EDITOR "{{ .editor }}"
+    set -Ux SHELL "{{ .homebrew_path }}fish"
 end
