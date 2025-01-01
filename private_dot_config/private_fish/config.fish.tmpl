@@ -7,6 +7,7 @@ if status is-interactive
     fzf --fish | source
     atuin init fish | source
     zoxide init fish | source
+    alias cd="z"
     starship init fish | source
     set -Ux EDITOR "{{ .editor }}"
 end
