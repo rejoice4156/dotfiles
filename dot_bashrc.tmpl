@@ -1,6 +1,4 @@
-{{ if eq .chezmoi.os "darwin" }}
-
-{{ else if eq .chezmoi.os "linux" }}
+{{ if eq .chezmoi.os "linux" -}}
 
 # .bashrc
 
@@ -34,4 +32,4 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 # 1Password
 source /home/karl/.config/op/plugins.sh
 
-{{ end }}
+{{- end }}
