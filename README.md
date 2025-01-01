@@ -39,3 +39,9 @@ op plugin init doctl
 ```bash
 chsh -s $(which fish)
 ```
+
+## Install Docker
+```bash
+curl -fsSL https://get.docker.com | sh
+```
+
