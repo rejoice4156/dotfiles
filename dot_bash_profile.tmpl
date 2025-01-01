@@ -1,7 +1,0 @@
-{{ if eq .chezmoi.os "linux" -}}
-if [ -f ~/.bashrc ]; then
-    . ~/.bashrc
-fi
-
-eval "$({{ .homebrew_path }}brew shellenv)"
-{{- end }}
