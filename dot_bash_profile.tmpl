@@ -2,5 +2,6 @@
 if [ -f ~/.bashrc ]; then
     . ~/.bashrc
 fi
+
 eval "$({{ .homebrew_path }}brew shellenv)"
 {{- end }}
