@@ -43,5 +43,10 @@ chsh -s $(which fish)
 ## Install Docker
 ```bash
 curl -fsSL https://get.docker.com | sh
+sudo modprobe ip_tables
+dockerd-rootless-setuptool.sh install
+sudo loginctl enable-linger karl
+export PATH=/usr/bin:$PATH
+export DOCKER_HOST=unix:///run/user/1000/docker.sock
 ```
 
