@@ -1,25 +1,14 @@
 if status is-interactive
-
-    {{ if eq .chezmoi.os "darwin" }}
-
-    fish_add_path /opt/homebrew/bin/
-    fish_add_path ~/.orbstack/bin
-
-    {{ else if eq .chezmoi.os "linux" }}
-
-    fish_add_path /home/linuxbrew/.linuxbrew/bin/
-    source /home/karl/.config/op/plugins.sh
-    alias cd="z"
-
-    {{ end }}
-
+    fish_add_path {{ .homebrew_path }}
     set -g fish_key_bindings fish_vi_key_bindings
     set -g fish_greeting
-
     op completion fish | source
     fzf --fish | source
     atuin init fish | source
     zoxide init fish | source
     starship init fish | source
-
+    {{- if eq .chezmoi.os "linux" }}
+    source /home/karl/.config/op/plugins.sh
+    alias cd="z"
+    {{- end }}
 end
