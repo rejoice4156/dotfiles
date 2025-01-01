@@ -1,18 +1,6 @@
-[edit]
-command = "nvim"
-
-[merge]
-command = "nvim"
-args = ["-d", "{{ "{{" }} .Destination {{ "}}" }}", "{{ "{{" }} .Source {{ "}}" }}", "{{ "{{" }} .Target {{ "}}" }}"]
-
 [diff]
 command = "delta"
 pager = "delta"
-
-[[textconv]]
-pattern = "**/*.plist"
-command = "plutil"
-args = ["-convert", "xml1", "-o", "-", "-"]
 
 [git]
 autoCommit = true
