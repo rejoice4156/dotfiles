@@ -11,4 +11,6 @@ if status is-interactive
     starship init fish | source
     set -Ux EDITOR "{{ .editor }}"
     set -Ux SHELL "{{ .homebrew_path }}fish"
+    set -x GOPATH (go env GOPATH)
+    set -x PATH $PATH (go env GOBIN)/bin
 end
