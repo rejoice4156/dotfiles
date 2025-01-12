@@ -12,5 +12,5 @@ if status is-interactive
     set -Ux EDITOR "{{ .editor }}"
     set -Ux SHELL "{{ .homebrew_path }}fish"
     set -x GOPATH (go env GOPATH)
-    set -x PATH $PATH (go env GOBIN)/bin
+    set -x PATH $PATH (go env GOPATH)/bin
 end
