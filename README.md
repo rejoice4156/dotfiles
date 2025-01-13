@@ -1,5 +1,9 @@
 # Dotfiles
 
+## TODO
+
+- [] Add private_library to only apply if os is darwin (maybe in .chezmoiignore?)
+
 ## Install Homebrew
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
