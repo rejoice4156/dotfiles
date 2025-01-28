@@ -1,0 +1,12 @@
+if status is-interactive
+    fish_add_path /opt/homebrew/bin/
+    set -g fish_key_bindings fish_vi_key_bindings
+    set -g fish_greeting
+    op completion fish | source
+    source /Users/karl/.config/op/plugins.sh
+    fzf --fish | source
+    atuin init fish | source
+    zoxide init fish | source
+    starship init fish | source
+    set -x PATH $PATH (go env GOPATH)/bin
+end
