@@ -1,7 +1,11 @@
 if status is-interactive
-    fish_add_path /opt/homebrew/bin/
+    # fish config
     set -g fish_key_bindings fish_vi_key_bindings
     set -g fish_greeting
+    # paths
+    fish_add_path /opt/homebrew/bin/
+    fish_add_path /Users/karl/.local/share/../bin
+    # programs
     fzf --fish | source
     atuin init fish | source
     zoxide init fish | source
