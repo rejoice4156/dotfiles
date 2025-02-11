@@ -3,11 +3,11 @@ if status is-interactive
     set -g fish_key_bindings fish_vi_key_bindings
     set -g fish_greeting
     # paths
-    fish_add_path /opt/homebrew/bin/
-    fish_add_path /Users/karl/.local/share/../bin
-    fish_add_path (go env GOPATH)/bin
-    fish_add_path /Users/aharo/.cargo/bin/
-    fish_add_path /usr/local/opt/ruby/bin
+    fish_add_path /opt/homebrew/bin/ # homebrew
+    fish_add_path /Users/karl/.local/share/../bin # uv
+    fish_add_path (go env GOPATH)/bin # go
+    fish_add_path /Users/aharo/.cargo/bin/ # cargo
+    fish_add_path /usr/local/opt/ruby/bin # ruby
     # programs
     fzf --fish | source
     atuin init fish | source
