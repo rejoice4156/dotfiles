@@ -5,6 +5,9 @@ if status is-interactive
     # paths
     fish_add_path /opt/homebrew/bin/
     fish_add_path /Users/karl/.local/share/../bin
+    fish_add_path (go env GOPATH)/bin
+    fish_add_path /Users/aharo/.cargo/bin/
+    fish_add_path /usr/local/opt/ruby/bin
     # programs
     fzf --fish | source
     atuin init fish | source
